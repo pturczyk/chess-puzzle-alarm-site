@@ -1,30 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chess Puzzle Alarm</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chess Puzzle Alarm - Solve a puzzle to wake up</title>
+  <meta name="description" content="An iPhone alarm you dismiss by solving a chess puzzle. No mindless snooze. Reliable AlarmKit alarms, Puzzle Rush, streaks and thousands of offline puzzles. Requires iOS 26.">
+  <meta name="theme-color" content="#2e4675">
+  <link rel="canonical" href="https://pturczyk.github.io/chess-puzzle-alarm-site/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chess Puzzle Alarm">
+  <meta property="og:title" content="Chess Puzzle Alarm - Solve a puzzle to wake up">
+  <meta property="og:description" content="An iPhone alarm you dismiss by solving a chess puzzle. No mindless snooze. Reliable alarms, Puzzle Rush, streaks and thousands of offline puzzles.">
+  <meta property="og:url" content="https://pturczyk.github.io/chess-puzzle-alarm-site/">
+  <meta property="og:image" content="https://pturczyk.github.io/chess-puzzle-alarm-site/icon.png">
+
+  <link rel="icon" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Chess Puzzle Alarm",
+    "operatingSystem": "iOS 26",
+    "applicationCategory": ["GameApplication", "EducationalApplication"],
+    "description": "An iPhone alarm you dismiss by solving a chess puzzle. Reliable AlarmKit alarms, Puzzle Rush, streaks and thousands of offline puzzles.",
+    "author": { "@type": "Person", "name": "Pawel Turczyk" },
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "screenshot": [
+      "https://pturczyk.github.io/chess-puzzle-alarm-site/screens/1-home.webp",
+      "https://pturczyk.github.io/chess-puzzle-alarm-site/screens/4-solve.webp",
+      "https://pturczyk.github.io/chess-puzzle-alarm-site/screens/5-rush.webp",
+      "https://pturczyk.github.io/chess-puzzle-alarm-site/screens/3-streak.webp"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <h1>Chess Puzzle Alarm</h1>
-  <p class="tag">Wake up and solve a chess puzzle to dismiss the alarm.</p>
 
-  <a class="card" href="privacy.html">
-    <h2>Privacy Policy</h2>
-    <p>What the app stores, and why it never leaves your device.</p>
-  </a>
+  <header>
+    <a href="index.html" style="display:flex;align-items:center;gap:0.6rem;">
+      <img src="icon.png" alt="Chess Puzzle Alarm icon" class="logo">
+      <h1>Chess Puzzle Alarm</h1>
+    </a>
+    <nav class="nav">
+      <span class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#screens">Screens</a>
+        <a href="support.html">Support</a>
+      </span>
+    </nav>
+  </header>
 
-  <a class="card" href="support.html">
-    <h2>Support</h2>
-    <p>Get help, ask a question, or report an issue.</p>
-  </a>
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">iPhone &middot; Requires iOS 26</span>
+        <h2>Wake up and <em>actually</em> get up.</h2>
+        <p>
+          Chess Puzzle Alarm rings like any alarm. To switch it off you solve a
+          chess puzzle. No mindless snooze tapping, so your brain is awake before
+          your feet hit the floor.
+        </p>
+        <div class="hero-cta">
+          <span class="pill">Coming soon to the App Store</span>
+          <a href="#features" class="btn btn-ghost">Explore the features</a>
+        </div>
+        <p class="hero-note">Free. No ads, no accounts, fully offline.</p>
+      </div>
+      <div class="hero-art">
+        <div class="device">
+          <img src="screens/1-home.webp" alt="Chess Puzzle Alarm home screen with alarms and streak" loading="eager" width="640">
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <a class="card" href="terms.html">
-    <h2>Terms of Use</h2>
-    <p>The license and terms that govern using the app.</p>
-  </a>
+  <!-- ============ DEEP-DIVE FEATURES ============ -->
+  <section class="section" id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>An alarm you cannot dismiss on autopilot</h2>
+        <p>The snooze button is too easy. A chess puzzle is not.</p>
+      </div>
 
-  <footer>Chess Puzzle Alarm is an on-device iOS app. It collects no data.</footer>
+      <div class="deep">
+
+        <!-- Solve to dismiss -->
+        <div class="deep-row">
+          <div class="deep-art">
+            <div class="device"><img src="screens/4-solve.webp" alt="A chess puzzle to solve to dismiss the alarm" loading="lazy" width="640"></div>
+          </div>
+          <div class="deep-copy">
+            <span class="tag">Solve to dismiss</span>
+            <h3>The only way off is the right move</h3>
+            <p>
+              When the alarm rings, a chess puzzle appears. Find the winning move
+              and the alarm stops. Pick how hard the morning puzzle should be, from
+              a gentle one-mover to a real tactical test, or drill a theme like
+              forks, pins and checkmates.
+            </p>
+          </div>
+        </div>
+
+        <!-- Puzzle Rush -->
+        <div class="deep-row reverse">
+          <div class="deep-art">
+            <div class="device"><img src="screens/5-rush.webp" alt="Puzzle Rush in progress with a running score" loading="lazy" width="640"></div>
+          </div>
+          <div class="deep-copy">
+            <span class="tag">Puzzle Rush</span>
+            <h3>Race the clock, three strikes and out</h3>
+            <p>
+              Not just for mornings. Puzzle Rush serves puzzles that ramp in
+              difficulty as you go. Clear as many as you can before three strikes
+              end the run, then chase your best score.
+            </p>
+          </div>
+        </div>
+
+        <!-- Streaks -->
+        <div class="deep-row">
+          <div class="deep-art">
+            <div class="device"><img src="screens/3-streak.webp" alt="Streak history chart with current and best streak" loading="lazy" width="640"></div>
+          </div>
+          <div class="deep-copy">
+            <span class="tag">Streaks &amp; history</span>
+            <h3>Keep the run alive</h3>
+            <p>
+              Every solve builds your streak. Track your current run, your best
+              ever, and a full history of how you have been doing, so the habit
+              sticks and the mornings add up.
+            </p>
+          </div>
+        </div>
+
+        <!-- Achievements -->
+        <div class="deep-row reverse">
+          <div class="deep-art">
+            <div class="device"><img src="screens/2-achievements.webp" alt="Achievements grid" loading="lazy" width="640"></div>
+          </div>
+          <div class="deep-copy">
+            <span class="tag">Achievements</span>
+            <h3>Something to unlock every morning</h3>
+            <p>
+              Milestones for streaks, rush scores and puzzles cleared give you a
+              reason to keep coming back and a way to watch yourself improve over
+              time.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURE GRID ============ -->
+  <section class="section alt">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Everything else in the box</h2>
+        <p>Built for iPhone, on iOS 26 and later.</p>
+      </div>
+      <div class="grid">
+        <div class="feature">
+          <div class="ico">⏰</div>
+          <h3>Reliable alarms</h3>
+          <p>Built on Apple's AlarmKit, so alarms ring through Silent mode and Focus at the volume you expect.</p>
+        </div>
+        <div class="feature">
+          <div class="ico">🎚️</div>
+          <h3>Tune the difficulty</h3>
+          <p>Set how hard the puzzle should be per alarm, from an easy one-mover to a serious tactic.</p>
+        </div>
+        <div class="feature">
+          <div class="ico">🎯</div>
+          <h3>Pick a theme</h3>
+          <p>Drill forks, pins, checkmates and more, or leave it mixed for a fresh challenge each day.</p>
+        </div>
+        <div class="feature">
+          <div class="ico">📴</div>
+          <h3>Fully offline</h3>
+          <p>Thousands of puzzles bundled with the app, from the public Lichess database. No connection needed.</p>
+        </div>
+        <div class="feature">
+          <div class="ico">🔒</div>
+          <h3>Private by design</h3>
+          <p>No accounts, no analytics, no ads. Nothing you do ever leaves your device.</p>
+        </div>
+        <div class="feature">
+          <div class="ico">🌓</div>
+          <h3>Light and dark</h3>
+          <p>Choose your board theme and a light or dark look that is easy on early-morning eyes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCREENS GALLERY ============ -->
+  <section class="section" id="screens">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>See it in action</h2>
+        <p>Swipe through the app.</p>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="device"><img src="screens/1-home.webp" alt="Home screen" loading="lazy" width="640"></div>
+      <div class="device"><img src="screens/4-solve.webp" alt="Solving a puzzle" loading="lazy" width="640"></div>
+      <div class="device"><img src="screens/5-rush.webp" alt="Puzzle Rush" loading="lazy" width="640"></div>
+      <div class="device"><img src="screens/6-rush-stats.webp" alt="Rush stats" loading="lazy" width="640"></div>
+      <div class="device"><img src="screens/3-streak.webp" alt="Streak history" loading="lazy" width="640"></div>
+      <div class="device"><img src="screens/2-achievements.webp" alt="Achievements" loading="lazy" width="640"></div>
+      <div class="device"><img src="screens/7-appearance.webp" alt="Appearance settings" loading="lazy" width="640"></div>
+    </div>
+  </section>
+
+  <!-- ============ LEGAL ============ -->
+  <section class="section alt">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>The fine print</h2>
+        <p>Short, plain and worth a read.</p>
+      </div>
+      <div class="cards">
+        <a class="card" href="privacy.html">
+          <h3>Privacy Policy &rarr;</h3>
+          <p>What the app stores, and why it never leaves your device.</p>
+        </a>
+        <a class="card" href="terms.html">
+          <h3>Terms of Use &rarr;</h3>
+          <p>The license and terms that cover your use of the app.</p>
+        </a>
+        <a class="card" href="support.html">
+          <h3>Support &rarr;</h3>
+          <p>Get help, ask a question, or report an issue.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 Pawel Turczyk</span>
+    <span>
+      <a href="mailto:pturczyk@gmail.com">pturczyk@gmail.com</a>
+      &middot; <a href="privacy.html">Privacy</a>
+      &middot; <a href="terms.html">Terms</a>
+      &middot; <a href="support.html">Support</a>
+    </span>
+  </footer>
+
 </body>
 </html>
